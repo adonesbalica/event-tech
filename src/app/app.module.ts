@@ -1,6 +1,7 @@
 import { Module } from "@nestjs/common";
-import { ConfigModule, type ConfigType } from "@nestjs/config";
+import { ConfigModule, ConfigType } from "@nestjs/config";
 import { TypeOrmModule } from "@nestjs/typeorm";
+import { EventModule } from "@/event/event.module";
 import appConfig from "./app.config";
 import { AppController } from "./app.controller";
 import { AppService } from "./app.service";
@@ -24,6 +25,7 @@ import { AppService } from "./app.service";
 				};
 			},
 		}),
+		EventModule,
 	],
 	controllers: [AppController],
 	providers: [AppService],
