@@ -11,7 +11,8 @@
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "types": [
-      "node"
+      "node",
+      "jest"
     ],
     "target": "ES2023",
     "sourceMap": true,
