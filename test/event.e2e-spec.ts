@@ -8,7 +8,7 @@ describe("Event (e2e)", () => {
 
 	beforeAll(async () => {
 		const moduleFixture = await Test.createTestingModule({
-			imports: [AppModule], // 👈 carrega TypeORM + Postgres
+			imports: [AppModule],
 		}).compile();
 
 		app = moduleFixture.createNestApplication();
